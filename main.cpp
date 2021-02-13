@@ -67,10 +67,10 @@ bool left_search(int searched_verticle_pos, int crt_verticle_pos, int &pos)
     {
         found = match(searched_verticle_pos, i);
         if(found == -1)
-            return 0;// we found an already visited verticle
+            return 0;// an already visited verticle is found
         else
         {
-            if(found == 1)// we found the searched verticle
+            if(found == 1)// the searched verticle is found 
             {
                 pos = i;
                 return 1;
@@ -89,11 +89,11 @@ bool right_search(int searched_verticle_pos, int crt_verticle_pos, int &pos, int
     for(i = crt_verticle_pos + 1; i <= n; i++)
     {
         found = match(searched_verticle_pos, i);
-        if(found == -1)// we found an already visited verticle
+        if(found == -1)// an already visited verticle is found
             return 0;
         else
         {
-            if(found == 1)// we found the searched verticle
+            if(found == 1)// the searched verticle is found 
             {
                 pos = i;
                 return 1;
